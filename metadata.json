@@ -1,0 +1,8 @@
+{
+  "name": "HUGME.AR — Soft Plushies & Cozy Companions",
+  "description": "HUGME.AR offers dreamy plushies, teddy bears, bunnies, kawaii soft toys, and thoughtful keepsake gifts. A hug in every little thing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

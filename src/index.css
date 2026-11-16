@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #F4DDE3;
+  --color-cream: #FFF8EF;
+  --color-dusty-rose: #C98F9D;
+  --color-cocoa: #765B55;
+  --color-lavender: #E9E2F5;
+  --color-peach: #F4DCCB;
+  --color-pure-white: #FFFFFF;
+
+  --font-brand: 'Fredoka', cursive, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Quicksand', sans-serif;
+  --font-ui: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    background-color: #FFF8EF;
+    color: #765B55;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  button, input, select, textarea, nav {
+    font-family: var(--font-ui);
+  }
+}
+
+.font-brand {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-ui {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle stitched boutique border utility */
+.stitch-border {
+  border: 1.5px dashed rgba(201, 143, 157, 0.45);
+}
+
+/* Smooth settling transitions */
+.ease-boutique {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-header-fade {
+  animation: headerFadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-header-fade {
+    animation: none;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2C6CD;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C98F9D;
+}
